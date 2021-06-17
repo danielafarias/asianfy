@@ -2,11 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-body {
+html {
   background-color: #EFA1D1;
 }
+
+$body-color: #EFA1D1;
 
 .logoBar {
   background-color: white;
@@ -19,20 +22,77 @@ body {
   }
 }
 
-.searchBar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar {
   background-color: yellow;
+  display: flex;
+  justify-content: center;
 
-  .searchImg {
-    width: 2rem;
-    padding: 0.5rem;
+  .navImg {
+    width: 1.5rem;
   }
 
-  .searchBox {
-    width: 18rem;
-    border: 1px #FF32AF solid;
-    border-radius: 5px;
+  .nav {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 0.2rem;
+
+    .home-link {
+      color: #FF32AF;
+      font-weight: bold;
+    }
+
+    .artists-link {
+      color: #FF32AF;
+      font-weight: bold;
+    }
+
+    .countries-link {
+      color: #FF32AF;
+      font-weight: bold;
+    }
+
+    .genres-link {
+      color: #FF32AF;
+      font-weight: bold;
+    }
+
+    .about-link {
+      color: #FF32AF;
+      font-weight: bold;
+    }
+
+    .docs-link {
+      color: #FF32AF;
+      font-weight: bold;
+    }
   }
+
+  .search {
+
+    .searchBox {
+      width: 60%;
+    }
+  
+    .button {
+      margin: 0.5rem;
+      padding: 4px;
+      border: 2px #FF32AF solid;
+      border-radius: 5px;
+      color: #FF32AF;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #FF32AF;
+      color: white;
+    }
+  }
+
+
 }
+
+.navbar-expand {
+  justify-content: center;
+  flex-flow: row;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
