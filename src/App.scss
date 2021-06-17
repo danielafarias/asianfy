@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFA1D1;
+}
+
+.logoBar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+
+  .logoImg {
+      width: 14rem;
+      padding: 1rem;
+  }
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+
+  .searchImg {
+    width: 2rem;
+    padding: 0.5rem;
+  }
+
+  .searchBox {
+    width: 18rem;
+    border: 1px #FF32AF solid;
+    border-radius: 5px;
+  }
+}
