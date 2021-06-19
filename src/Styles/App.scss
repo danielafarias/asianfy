@@ -35,33 +35,9 @@ $body-color: #EFA1D1;
     font-size: 1rem;
     margin-left: 1rem;
     margin-right: 0.2rem;
+    text-align: center;
 
-    .home-link {
-      color: #FF32AF;
-      font-weight: bold;
-    }
-
-    .artists-link {
-      color: #FF32AF;
-      font-weight: bold;
-    }
-
-    .countries-link {
-      color: #FF32AF;
-      font-weight: bold;
-    }
-
-    .genres-link {
-      color: #FF32AF;
-      font-weight: bold;
-    }
-
-    .about-link {
-      color: #FF32AF;
-      font-weight: bold;
-    }
-
-    .docs-link {
+    #links {
       color: #FF32AF;
       font-weight: bold;
     }
@@ -86,13 +62,10 @@ $body-color: #EFA1D1;
       color: white;
     }
   }
-
-
 }
 
-.navbar-expand {
-  justify-content: center;
-  flex-flow: row;
+.app-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #EFA1D1;
 }
-
-@import "../node_modules/bootstrap/scss/bootstrap";

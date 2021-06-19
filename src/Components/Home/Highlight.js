@@ -1,7 +1,7 @@
 import { Carousel } from "react-bootstrap";
-import niziu from '../img/niziu.jpg';
-import exo from '../img/exo.jpg';
-import chenjue from '../img/chenjue.jpg';
+import niziu from '../../img/niziu.jpg';
+import chenjue from '../../img/chenjue.jpg';
+import exo from '../../img/exo.png';
 
 
 function Highlight() {
