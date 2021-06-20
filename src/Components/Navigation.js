@@ -11,7 +11,7 @@ function Navigation() {
         <Navbar className='justify-content-center' bg="custom" variant="cutom">
             <img src={musicImg} className='navImg' alt='Music Symbol'/>
             <Nav className="nav" bg="custom">
-                <Nav.Link id='links' href="/home">Home</Nav.Link>
+                <Nav.Link id='links' href="/">Home</Nav.Link>
                 <Nav.Link id='links' href="/artists">Artists</Nav.Link>
                 <Nav.Link id='links' href="/countries">Countries</Nav.Link>
                 <Nav.Link id='links' href="/genres">Genres</Nav.Link>

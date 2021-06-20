@@ -1,3 +1,5 @@
+// #EFA1D1
+
 * {
   padding: 0;
   margin: 0;
@@ -6,13 +8,11 @@
 }
 
 html {
-  background-color: #EFA1D1;
+  background-color: #ffffff;
 }
 
-$body-color: #EFA1D1;
-
 .logoBar {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
 
@@ -67,5 +67,15 @@ $body-color: #EFA1D1;
 .app-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-color: #EFA1D1;
+
+  .highlight {
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px #000000;
+
+    h3 {
+      font-size: 2rem;
+      color: #EFA1D1;
+      text-shadow: 2px 2px 4px #FF23AF;
+    }
+  }
 }
