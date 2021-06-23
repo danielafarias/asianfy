@@ -1,8 +1,9 @@
 import './Styles/App.scss';
 import logo from './logo.png';
-import Navigation from './Components/Navigation';
+import NavigationCopy2 from './Components/Navigation/NavigationCopy2';
 import Home from './Components/Home/Home.js';
 import Artists from './Components/Artists/Artists.js';
+import CreateArtist from './Components/Artists/CreateArtist';
 import Countries from './Components/Countries/Countries.js';
 import Genres from './Components/Genres/Genres.js';
 import About from './Components/About/About.js';
@@ -19,7 +20,7 @@ class App extends React.Component {
           <img className='logoImg' src={logo} alt='Asianfy logo'/>
         </div>
 
-        <Navigation />
+        <NavigationCopy2 />
 
         <Container className='app-container'>
         <Row>
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Switch>
             <Route path='/' exact={true} component={Home}></Route>
             <Route path='/artists' component={Artists}></Route>
+            <Route path='/create-artist' component={CreateArtist}></Route>
             <Route path='/countries' component={Countries}></Route>
             <Route path='/genres' component={Genres}></Route>
             <Route path='/about' component={About}></Route>

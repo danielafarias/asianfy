@@ -1,9 +1,9 @@
 import { Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap'
-import musicImg from '../img/musicImg.png'
+import musicImg from '../../img/musicImg.png'
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../Styles/App.scss'
+import '../../Styles/App.scss'
 
 
 function Navigation() {

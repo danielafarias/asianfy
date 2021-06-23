@@ -29,6 +29,7 @@ html {
 
   .navImg {
     width: 1.5rem;
+    margin-right: 0.5rem;
   }
 
   .nav {
@@ -47,21 +48,39 @@ html {
 
     .searchBox {
       width: 60%;
+      margin-right: 0.5rem;
     }
   
-    .button {
-      margin: 0.5rem;
-      padding: 4px;
-      border: 2px #FF32AF solid;
-      border-radius: 5px;
-      color: #FF32AF;
-      font-weight: bold;
-    }
-    .button:hover {
-      background-color: #FF32AF;
-      color: white;
-    }
-  }
+    
+}
+
+.btn.btn-primary{
+  border: 2px #FF32AF solid;
+  border-radius: 5px;
+  padding: -2rem;
+  color: #FF32AF;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.btn.btn-danger{
+  border: 2px #FF32AF solid;
+  border-radius: 5px;
+  color: #FF32AF;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #FF32AF;
+  color: white;
+}
+
+.btn.btn-danger:hover {
+  background-color: red;
+  border-color: red;
+}
+
 }
 
 .app-container {
@@ -75,7 +94,21 @@ html {
     h3 {
       font-size: 2rem;
       color: #EFA1D1;
-      text-shadow: 2px 2px 4px #FF23AF;
+      text-shadow: 2px 2px 4px #FF32AF;
     }
   }
+}
+
+#dropdown-basic-button {
+  background-color: yellow;
+  color: #FF32AF;
+  border-color: yellow
+}
+
+a.dropdown-item {
+  color: rgb(100, 97, 97);
+}
+
+a.dropdown-item:hover {
+  background-color: #EFA1D1;
 }
