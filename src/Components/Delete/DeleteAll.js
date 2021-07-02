@@ -1,7 +1,8 @@
 import { Component } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Form } from "react-bootstrap";
 import { Api } from "../../Api/Api";
 import '../../Styles/DeleteAll.scss';
+import React from "react";
 
 class DeleteAll extends Component {
     constructor(props) {
@@ -35,6 +36,7 @@ class DeleteAll extends Component {
 
     render() {
         return (
+            <Form onFocus={this.passwordValidation}>
             <Card className="text-center">
                 <Card.Header>Delete</Card.Header>
                 <Card.Body>
@@ -47,6 +49,7 @@ class DeleteAll extends Component {
                 </Card.Body>
                 <Card.Footer className="text-muted">Be sure</Card.Footer>
             </Card>
+            </Form>
         );
     }
 }
