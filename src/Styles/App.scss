@@ -17,7 +17,7 @@ html {
   justify-content: center;
 
   .logoImg {
-      width: 14rem;
+      width: 20rem;
       padding: 1rem;
   }
 }
@@ -26,6 +26,9 @@ html {
   background-color: yellow;
   display: flex;
   justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+
 
   .navImg {
     width: 1.5rem;
@@ -111,4 +114,22 @@ a.dropdown-item {
 
 a.dropdown-item:hover {
   background-color: #EFA1D1;
+}
+
+.footer {
+  background-color: #EFA1D1;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+  text-align: center;
+}
+
+.app-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

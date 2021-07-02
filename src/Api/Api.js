@@ -6,7 +6,8 @@ export const Api = {
     readAllUrl: () => Api.baseUrl + '/',
     readSingleUrl: id => Api.baseUrl + '/' + id,
     createUrl: () => Api.baseUrl + '/',
-    deleteSingleUrl: id => Api.baseUrl + '/' + id,
+    updateUrl: id => Api.baseUrl + '/' + id,
+    deleteUrl: id => Api.baseUrl + '/' + id,
     deleteAllUrl: () => Api.baseUrl + '/',
 
     buildApiGetRequest: url => {
@@ -32,7 +33,20 @@ export const Api = {
     buildApiDeleteRequest: url => {
         return fetch(url, {
             method: 'DELETE',
-            headers: new Headers({Authorization: Api.authorization})
+            headers: new Headers({
+                Authorization: Api.authorization
+            })
         })
-    }
+    },
+
+    buildApiPutRequest: (url, body) => {
+        return fetch(url, {
+            method: 'PUT',
+            headers: new Headers({
+                Authorization: Api.authorization,
+                'Content-type': 'application/json'
+            }),
+            body: JSON.stringify(body)
+        })
+    },
 }

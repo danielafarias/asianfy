@@ -1,0 +1,84 @@
+.navbar {
+    background-color: #ffff00;
+    
+
+    .navbar-brand {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 0px #FF32AF;
+    }
+
+    .navbar-brand:hover {
+        color: #ffffff;
+        text-shadow: 2px 2px 0px #52cfee;
+        transition: 0.5S;
+    }
+
+    .navbar-toggler {
+        border-color: #FF32AF;
+
+        .navbar-toggler-icon {
+            background-image: url(https://icones.pro/wp-content/uploads/2021/04/icone-menu-cercles-roses.png);
+        }
+    }
+
+    .navbar-toggler:hover {
+        cursor: pointer;
+    }
+
+    #basic-nav-dropdown {
+        color: #FF32AF;
+        font-size: 1.1rem;
+    }
+    
+    #basic-nav-dropdown:hover {
+        margin: 0 1rem 0 1rem;
+        color: #52cfee;
+        font-weight: bold;
+    }
+
+    .dropdown-menu {
+        background-color: #ffffe0;
+        font-size: 1.3rem;
+        .dropdown-item:hover {
+            background-color:#EFA1D1
+        }
+    }
+
+    .search {
+        justify-content: center;
+
+        .mr-sm-2 {
+            border-color: #EFA1D1;
+            margin: 0.5rem;
+        }
+
+        .btn {
+            border-color: #FF32AF;
+            color: #FF32AF;
+        }
+
+        .btn:hover {
+            background-color: #FF32AF;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+
+    .dropdown-toggle {
+        font-size: 1.3rem;
+    }
+    
+}
+
+.gif {
+    width: 10%;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,39 @@
+.playlist {
+    margin-top: 2rem;
+    border-color: #EFA1D1;
+}
+
+.player {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+
+}
+
+.player-autor {
+    color: #cccccc; 
+    text-decoration: none;
+}
+
+.player-playlist {
+    color: #cccccc; 
+    text-decoration: none;
+}
+
+.caption {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.app-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

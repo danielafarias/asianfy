@@ -1,0 +1,26 @@
+.app-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#genres-list-name {
+    background-color: #f5c5e3;
+    color: #38b3a8;
+    font-weight: 800;
+}
+
+#genres-list-name:hover {
+    transition: 0.4s;
+    background-color: #EFA1D1;
+    color: #FF32AF
+}
+
+#genre-info-name {
+    font-size: 3rem;
+} 
+
+#genre-info-btn {
+    width: 30%;
+}

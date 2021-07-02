@@ -1,0 +1,71 @@
+.card {
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .card-img-top {
+        border-radius: 1rem 1rem 0 0;
+    }
+}
+
+
+.app-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#country-card {
+    border-radius: 1rem;
+    box-shadow: 10px 10px 0 #52fcee;
+
+    #country-img {
+        border-radius: 1rem;
+    }
+
+    #country-overlay {
+        background-color: #000000b0;
+        border-radius: 1rem;
+
+        #country-title {
+            font-size: 3rem;
+            color: #ffff00;
+            text-shadow: 3px 3px 0 #FF32AF;
+        }
+
+        #country-btn {
+            font-size: 1.5rem;
+            font-weight: 900;
+            box-shadow: 3px 3px 0 #FF32AF;
+        }
+
+        #country-btn:hover {
+            transition: 0.5s;
+            background-color: #FF32AF;
+            border-color: #FF32AF;
+            color: #ffff00;
+            box-shadow: 3px 3px 0 #ffff00;
+        }
+    }
+
+    #country-overlay:hover {
+        transition: 0.5s;
+        background-color: #000000d3;
+    }
+
+}
+
+#country-card:hover {
+    box-shadow: 10px 10px 0 #ffff00;
+}
+
+#country-info-img {
+    border-radius: 1rem;
+    width: 70%;
+}
+
+#country-info-title {
+    font-size: 3rem;
+}
+

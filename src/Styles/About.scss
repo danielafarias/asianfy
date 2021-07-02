@@ -1,0 +1,40 @@
+.card {
+    align-items: center;
+    border-color: #efa1d180;
+}
+
+#img {
+    border-radius: 99999px;
+    width: 70%;
+    margin-top: 2rem;
+}
+
+#about-title {
+    color: #d8488b;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 0 #52fcee;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+.list-group {
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.app-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

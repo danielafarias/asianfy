@@ -1,27 +1,47 @@
-import { Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap'
+import { Navbar, Button, Form, FormControl, NavDropdown, Nav } from 'react-bootstrap'
 import musicImg from '../../img/musicImg.png'
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../../Styles/App.scss'
+import '../../Styles/Navigation.scss'
 
 
 function Navigation() {
+
     return (
-        <Navbar className='justify-content-center' bg="custom" variant="cutom">
+        <Navbar expand="md">
+
             <img src={musicImg} className='navImg' alt='Music Symbol'/>
-            <Nav className="nav" bg="custom">
-                <Nav.Link id='links' href="/">Home</Nav.Link>
-                <Nav.Link id='links' href="/artists">Artists</Nav.Link>
-                <Nav.Link id='links' href="/countries">Countries</Nav.Link>
-                <Nav.Link id='links' href="/genres">Genres</Nav.Link>
-                <Nav.Link id='links' href="/about">About</Nav.Link>
-                
-            </Nav>
-            <Form inline className='search'>
-                <FormControl type="text" placeholder="Be curious!" className="searchBox" />
-                <Button className='button' variant="custom">Search</Button>
-            </Form>
+            <Navbar.Brand href="/">Asian Music for you!</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+
+                    <Nav.Link id='basic-nav-dropdown' href="/">Home</Nav.Link>
+                    <Nav.Link id='basic-nav-dropdown' href="/about">About</Nav.Link>
+
+                    <NavDropdown title="Artits" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/artists">Go to Artists</NavDropdown.Item>
+                        <NavDropdown.Item href="/create-artist">Insert Artist</NavDropdown.Item>
+                    </NavDropdown>
+
+                    <NavDropdown title="Countries" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/countries">Go to Countries</NavDropdown.Item>
+                        <NavDropdown.Item href="/create-country">Insert Country</NavDropdown.Item>
+                    </NavDropdown>
+
+                    <NavDropdown title="Genres" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/genres">Go to Genres</NavDropdown.Item>
+                        <NavDropdown.Item href="/create-genre">Insert Genre</NavDropdown.Item>
+                    </NavDropdown>
+
+                    <Nav.Link id='basic-nav-dropdown' href="/delete-all">Delete All</Nav.Link>
+                </Nav>
+
+                <img className='gif' alt='cat gif animated' src='https://i.gifer.com/14Sw.gif'/>
+
+            </Navbar.Collapse>
         </Navbar>
     );
 }

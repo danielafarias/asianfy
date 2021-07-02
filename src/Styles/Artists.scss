@@ -1,0 +1,243 @@
+h2 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #52cfee;
+    text-shadow: 1px 1px 2px #FF32AF;
+    border-bottom: 1px dashed #EFA1D1;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.form-label {
+    color: #e781c0;
+    text-shadow: 1px 1px 2px #ffff00;
+    font-size: 120%;
+}
+
+.form-control {
+    border-color:#EFA1D1;
+}
+
+.text-muted {
+    color: #5f676e;
+}
+
+.btn.btn-primary {
+    background-color:#ffff00;
+    color: #FF32AF;
+    border-color: #ffff00;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px #FF32AF;
+}
+
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dashed #FF32AF;
+    padding-bottom: 1.5rem;
+
+    .btn {
+        margin: 1rem;
+        font-weight: bold;
+
+        &.btn-info {
+            background-color: #52cfee;
+            border-color: #52cfee;
+        }
+
+        &.btn-info:hover {
+            box-shadow: 2px 2px 1px 1px #EFA1D1;
+            transition: 0.5s;
+        }
+
+        &.btn-danger {
+            background-color: #EFA1D1;
+            border-color: #EFA1D1;
+            opacity: 0.9;
+        }
+
+        &.btn-danger:hover {
+            box-shadow: 2px 2px 1px 1px #FF32AF;
+            transition: 0.5s;
+        }
+    }
+}
+
+.back-btn {
+    width: 15%;
+    padding: 0.5rem;
+    background-color:#ffff00;
+    color: #FF32AF;
+    border-color: #ffff00;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px #FF32AF;
+    border-radius: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.back-btn:hover {
+    text-decoration: none;
+    transition: 0.4s;
+    background-color:#FF32AF;
+    color: #ffffff;
+    border-color: #FF32AF;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #52cfee;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        font-weight: bold;
+        color: #555;
+    }
+
+    .info-title {
+        border-bottom: 1px dashed #FF32AF;
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0 0.5rem 0;
+        letter-spacing: 1px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EFA1D1;
+        text-shadow: 2px 2px 1px #52cfee;
+    }
+
+    .info-img {
+        max-width: 70%;
+        margin-bottom: 4rem;
+        box-shadow: 10px 10px 1px 2px #ffff00;
+        border-radius: 10px
+    }
+
+    .info-description {
+        font-size: 1.7rem;
+        color: #555;
+    }
+}
+
+#last-column {
+    border-bottom: 1px dashed #EFA1D1;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.text-center.card {
+    .card-header {
+        background-color: #e781c0;
+        font-size: 2rem;
+        color: #ffffff;
+        text-shadow: 1px 1px 0px #52cfee;
+    }
+
+    .card-title {
+        font-weight: bold;
+        color: #f70656
+    }
+
+    .card-body {
+        background-color: #EFA1D1;
+
+        
+    }
+
+    .card-footer {
+        background-color: #e781c0;
+
+        
+    }
+
+    .btn {
+        margin: 0 1rem 0 1rem;
+        text-align: center;
+
+        &.btn-danger {
+            background-color:#f70656;
+            color: #ffff00;
+            border-color: #ffff00;
+            font-weight: bold;
+            box-shadow: 1px 1px 2px #ffff00;
+        }
+    }
+
+    .btn:hover {
+        width: 9%;
+        font-size: 90%;
+    }
+}
+
+.card-artist.card {
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: #EFA1D1;
+    box-shadow: 10px 10px 1px 2px #ffff00;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    .card-img-top {
+        border-radius: 1rem 1rem 0 0rem;
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .card-title {
+            font-size: 200%;
+            font-weight: bold;
+            color:#FF32AF;
+            text-shadow: 1px 1px 0px #52cfee;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+    }
+
+    .btn.btn-primary {
+        letter-spacing: 1px;
+    }
+
+    .btn.btn-primary:hover {
+        transition: 0.4s;
+        background-color:#FF32AF;
+        color: #ffffff;
+        border-color: #FF32AF;
+        font-weight: bold;
+        box-shadow: 2px 2px 2px #52cfee;
+    }
+
+}
+
+.card-artist.card:hover {
+    transition: 0.8s;
+    box-shadow: 15px 15px 2px 2px #52cfee;
+    margin-left: 1rem;
+}
+
+.artists-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.app-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

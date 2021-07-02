@@ -2,6 +2,7 @@ import { Carousel } from "react-bootstrap";
 import niziu from '../../img/niziu.jpg';
 import chenjue from '../../img/chenjue.jpg';
 import exo from '../../img/exo.jpg';
+import '../../Styles/Home.scss';
 
 
 function Highlight() {
@@ -13,9 +14,9 @@ function Highlight() {
             src={niziu}
             alt="First slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="caption">
                 <h3>J-POP</h3>
-                <p>NiziU 'Take a picture' reached 60,000,000 views!</p>
+                <p>NiziU CF Queens!</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
@@ -24,9 +25,9 @@ function Highlight() {
             src={exo}
             alt="First slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="caption">
                 <h3>K-POP</h3>
-                <p>EXO 'Don't Fight the Felling' Release!</p>
+                <p>EXO New Song Release!</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
@@ -35,9 +36,9 @@ function Highlight() {
             src={chenjue}
             alt="First slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="caption">
                 <h3>C-POP</h3>
-                <p>Chenjue and Ayu release a song!</p>
+                <p>Chenjue and Ayu new feat!</p>
             </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
