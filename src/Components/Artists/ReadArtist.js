@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Api } from '../../Api/Api';
 import '../../Styles/Artists.scss';
+import spotifyImg from '../../img/spotifyImg.png';
 
 class ReadArtist extends Component {
 
@@ -94,6 +95,14 @@ class ReadArtist extends Component {
             <Col id='last-column'>
               <h3>Description:</h3>
               <p className="info-description">{item.description}</p>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <a target='_blank' href={item.spotify}>
+                <img className="spotify-logo" src={spotifyImg} href='' alt='spotify logo'/>
+              </a>
             </Col>
           </Row>
 

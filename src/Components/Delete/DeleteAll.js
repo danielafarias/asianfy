@@ -36,7 +36,7 @@ class DeleteAll extends Component {
 
     render() {
         return (
-            <Form onFocus={this.passwordValidation}>
+            <Form>
             <Card className="text-center">
                 <Card.Header>Delete</Card.Header>
                 <Card.Body>

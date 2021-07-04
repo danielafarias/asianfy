@@ -15,7 +15,7 @@ class CreateArtist extends Component {
     submitHandler = async event => {
         event.preventDefault();
 
-        const { name, imageUrl, description, members, genre, country, agency, debut } = event.target;
+        const { name, imageUrl, description, members, genre, country, agency, debut, spotify } = event.target;
 
         const item = {
             name: name.value,
@@ -25,7 +25,8 @@ class CreateArtist extends Component {
             genre: genre.value,
             country: country.value,
             agency: agency.value,
-            debut: debut.value
+            debut: debut.value,
+            spotify: spotify.value
         }
 
         this.setState({
@@ -134,6 +135,12 @@ class CreateArtist extends Component {
                         <Form.Label>Description</Form.Label>
                         <Form.Control type='text' placeholder='We wanna know more about this artist!'/>
                         <Form.Text className='text-muted'>This description will be used when viewing the item.</Form.Text>
+                    </Form.Group>
+
+                    <Form.Group controlId='spotify'>
+                        <Form.Label>Spotify</Form.Label>
+                        <Form.Control type='text' placeholder="Put the artist's Spotify profile here"/>
+                        <Form.Text className='text-muted'>The Spotify profile will be available on the view.</Form.Text>
                     </Form.Group>
 
                     <Button variant='primary' type='submit'>Submit</Button>

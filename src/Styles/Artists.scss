@@ -123,10 +123,16 @@ h2 {
     }
 }
 
-#last-column {
+.spotify-logo {
     border-bottom: 1px dashed #EFA1D1;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+}
+
+.spotify-logo:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .text-center.card {
